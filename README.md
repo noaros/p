@@ -1,4 +1,5 @@
-# STM Learn
+# Blinky Printf
+
 My educational microcontroller journey!
 
 I found this excellent bare-metal tutorial.
