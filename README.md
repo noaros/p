@@ -131,7 +131,7 @@ I don't relish IDE's, frameworks, and code wizards, as they generate so much cra
 
 # Conclusion
 
-I had fun and learned a lot! Most of the work done on this project is not obvious from the final forms but was spent investigating edge cases and alternates, trying to understand why something wasn't working. I lost a board, and had a plethora of USB connection issues. By the end I gained a lot of comfort with the datasheets and general patterns of this kind of development.
+I had fun and learned a lot! Most of the work done on this project is not obvious from the final forms but was spent investigating edge cases and alternates, trying to understand why something wasn't working. I lost a board, and had a plethora of USB connection issues. By the end I gained a lot of comfort with the reference manual (which I thought was the datasheet lol) and general patterns of this kind of development.
 
  There are some naughty bits in this project as I sought the minimal path. You know, for educational purposes! I omitted many *gcc* build parameters and attributes. Those probably deserve a closer look. I messed around with ad hoc linker scripts, but that's just fun. :smile: I used tight spin loops for delays, those need a *nop* or similar. Poking the start of *sram* with arbitrary logging data is dirty, and probably corrupts something in the *C* startup. I could make it safe by reserving some space with the linker script. I used basic types that could get me in trouble, such as *int* instead of *uint32_t*. Still, the blue light blinks. 
 
